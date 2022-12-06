@@ -10,11 +10,16 @@ namespace EverGreenMovies.Models
     {
         [Key]
         public int Id { get; set; }
+        [Display(Name = "Title")]
         public string Name { get; set; }
+        [Display(Name = "Premise")]
         public string Description { get; set; }
         public double Price { get; set; }
+        [Display(Name = "Poster")]
         public string ImageURL { get; set; }
+        [Display(Name = "Premiere Date")]
         public DateTime StartDate { get; set; }
+        [Display(Name = "Available Date")]
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
 
